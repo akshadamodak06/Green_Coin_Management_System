@@ -1,45 +1,69 @@
-# Green-Coin-Management-System
-<u>Group Members:</u> 
+# Green-Coin Management System
 
-1. Diya Patel (202301216)
+## Team Members  
+- Diya Patel (202301216)  
+- Maanav Gurubaxani (202301438)  
+- Shubham Varmora (202301450)  
+- Yesha Joshi (202301462)  
+- Akshada Modak (202301485)  
 
-2. Maanav Gurubaxani (202301438)
+**Instructor:** Prof. P. M. Jat  
+**Institution:** Dhirubhai Ambani University (DAU)  
 
-3. Shubham Varmora (202301450)
+---
 
-4. Yesha Joshi (202301462)
+## Project Overview  
 
-5. Akshada Modak (202301485)
+The **Green-Coin Management System** is a structured relational database developed to streamline the management of carbon credits under a cap-and-trade policy. It allows **governments to monitor emissions**, **companies to report and trade credits**, and **NGOs/citizens to access data**, fostering a transparent and sustainable environmental ecosystem.
 
-&nbsp;
-&nbsp;
+---
 
-Assigned By: Prof. PM Jat(DAU)
+## Functional Highlights  
 
-University: Dhirubhai Ambani University(DAU)
+- **Emission Monitoring:** Track greenhouse gas emissions by company and type.  
+- **Credit & Penalty Automation:** Allocate credits, calculate penalties, and reward eco-compliance.  
+- **Policy Enforcement:** Implement government regulations and conditions dynamically.  
+- **Transaction Logging:** Record carbon credit trades between organizations.  
+- **Stakeholder Integration:** Support for company branches, POCs, regulators, NGOs, and public access.
 
-&nbsp;
-&nbsp;
+---
 
-<u>Objective:</u>
+## Schema Components  
 
-Carbon emission rights, also known as carbon credits, are part of a cap-and-trade system that regulates greenhouse gas (GHG) emissions. Governments or regulatory bodies set a limit (cap) on the total emissions allowed, and companies receive emission allowances based on their expected emissions. If a company emits less than its allocated quota, it can trade (sell) the excess credits to other companies that exceed their limits. This creates a financial incentive for companies to reduce emissions and adopt cleaner technologies.
+Grouped by functionality, the system includes:
 
-The proposed database system will track and manage Carbon Credits, monitor company emissions, calculate carbon tax, allocate credits, and enable structured trading of surplus credits.
+### Company Operations  
+`Company`, `CompanyType`, `Branch`, `POCs`, `CompanyEmail`, `POCEmail`, `Project`
 
-&nbsp;
-&nbsp;
+### Environmental Data  
+`CompanyEmission`, `GreenhouseGases`, `CompanyTypeGasMapping`, `Conditions`, `CompanyConditions`
 
-<u>Files:</u>
+### Compliance & Credits  
+`Regulation`, `GovernmentPolicy`, `Reward`, `Penalty`, `Credit`, `Transaction`, `Regulator`
 
-1. ER_Diagram.png                   ->  Entity Relationship Diagram.
+### NGO & Public Oversight  
+`NGOs`, `NGOCollabrations`
 
-2. Relational_Diagram.png           ->  Relational Schema Diagram with Constraints and Keys.
+---
 
-3. DDL_Script.sql                   ->  Data Definition Language Script to create Schema and define database.
+## Repository Contents  
 
-4. Data_Insertion.sql               ->  Sql file containing SQL Data Insertion Script.
+| File                  | Purpose                                       |
+|-----------------------|-----------------------------------------------|
+| `ER_Diagram.png`      | Entity-Relationship Diagram                   |
+| `Relational_Diagram.png` | Relational schema with keys & constraints |
+| `DDL_Script.sql`      | SQL script for schema creation               |
+| `Data_Insertion.sql`  | Sample data population                       |
+| `Queries.sql`         | SQL queries for insights and analytics       |
+| `Triggers.sql`        | Business logic via SQL triggers              |
 
-5. Queries.sql                      ->  Sql file containing Queries to be run on database.
+---
 
-6. Triggers.sql                     -> Sql file containing Triggers to be run on database.
+## 🛠Tools & Technologies  
+
+- **SQL**, **Relational Database Design**, **Normalization**, **Entity-Relationship Modeling**  
+- Focused on **data integrity**, **auditability**, and **scalability**
+
+---
+
+> A database-driven solution to enable smart, sustainable, and policy-aligned carbon emission management.
