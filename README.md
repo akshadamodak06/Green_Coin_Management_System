@@ -59,7 +59,7 @@ Grouped by functionality, the system includes:
 
 ---
 
-## 🛠Tools & Technologies  
+## Tools & Technologies  
 
 - **SQL**, **Relational Database Design**, **Normalization**, **Entity-Relationship Modeling**  
 - Focused on **data integrity**, **auditability**, and **scalability**
